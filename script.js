@@ -24,8 +24,11 @@ btnLogout.addEventListener("click", logOut)
 //klick på logga in kallar på funktion
 btnLogin.addEventListener("click", logIn)
 
+setBodyDataLogOut();
+
 //login funktion
 function logIn() {
+    console.log('logged in');
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
@@ -60,6 +63,7 @@ function setBodyDataLogOut() {
 
 //funktion för inloggad check
 function checkLogIn() {
+    console.log('checking');
     if(localStorage.getItem("user")){
         setBodyDataLoggedIn();
     }
@@ -72,7 +76,9 @@ const saveToLocalStorage = (username) => {
 
 //funktion för att logga ut
 function logOut(){
+    console.log('logging out');
     setBodyDataLogOut();
+    localStorage.clear();
 }
 
 //checkar inloggning
