@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Janne AB</title>
 </head>
 <body>
+    <header>
+        <h1>Janne AB</h1>
+    </header>
+
+    <main>
+        <section class="container-2" id="notLoggedIn">
+            <h1>Logga in pls</h1>
+        </section>
+
+        <section class="container-2" id="loggedIn">
+            <h1>Välkommen</h1>
+            <p id="whoIsLoggedIn"></p>
+        </section>
+
+        <section class="container-2" id="error">
+            <h1>Var vänlig försök igen</h1>
+        </section>
+
+        <section class="container">
+            <div id="loginForm">
+                <input class="storage" id="username" type="text" placeholder="Username">
+                <br>
+                <input class="storage" id="password" type="text" placeholder="Password">
+                <button class="btnLogin" onclick="logIn()">Logga in</button>
+            </div>
+            <div id="logoutForm">
+                <button class="btnLogout">Logga ut</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footerText">GM FURTHERMORE HENLO</p>
+    </footer>
+
     <script src="script.js" refer></script>
 </body>
 </html>
