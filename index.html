@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Janne AB</title>
 </head>
 <body>
@@ -13,18 +14,18 @@
 
     <main>
         <section class="container-2" id="notLoggedIn">
-            <h1>Logga in pls</h1>
+            <h1>Log in pls</h1>
         </section>
 
         <section class="container-2" id="loggedIn">
-            <h1>Välkommen</h1>
+            <h1>Welcome</h1>
             <h2 id="whoIsLoggedIn"></h2>
-            <h3>Did you know?</h3>
+            <h3>Here is your pasta:</h3>
             <p>Male bees die after mating.<br> That's basically their life<br>Honey. Nut. Cheerio.</p>
         </section>
 
         <section class="container-2" id="error">
-            <h1>Var vänlig försök igen</h1>
+            <h1>Incorrect username or password</h1>
         </section>
 
         <section class="container">
@@ -32,10 +33,10 @@
                 <input class="storage" id="username" type="text" placeholder="Username">
                 <br>
                 <input class="storage" id="password" type="text" placeholder="Password">
-                <button class="btnLogin" onclick="logIn()">Logga in</button>
+                <button class="btnLogin" onclick="logIn()">Log in</button>
             </div>
             <div id="logoutForm">
-                <button class="btnLogout">Logga ut</button>
+                <button class="btnLogout">Log out</button>
             </div>
         </section>
     </main>
